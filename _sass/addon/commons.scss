@@ -1377,7 +1377,7 @@ $sidebar-display: "sidebar-display";
   }
 
   #search-wrapper {
-    max-width: 210px;
+    max-width: $search-max-width;
   }
 
   #search-result-wrapper {
@@ -1539,6 +1539,10 @@ $sidebar-display: "sidebar-display";
 
   #topbar-wrapper {
     left: $sidebar-width-large;
+  }
+
+  #search-wrapper {
+    margin-right: calc(#{$main-content-max-width} * 0.25 - #{$search-max-width});
   }
 
   #topbar,
